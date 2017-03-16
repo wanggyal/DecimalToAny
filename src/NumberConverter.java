@@ -32,7 +32,11 @@ public void inputValues(){
 
 public void convert_number(){
 	int i=0;
+	if(decimal_num==0||decimal_num<0)
+		System.out.println("Error!!! decimal number cannot be zero '0'.");
+	
 	int temp=decimal_num;
+	
 	while(temp/radix>0){
 		count++;
 		remender=temp%radix;
